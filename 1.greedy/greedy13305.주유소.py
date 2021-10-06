@@ -24,4 +24,6 @@ for i in range(t-1):
     result += price[i]*distance[i]
     if price[i] < price[i + 1]:
         price[i+1]=price[i]
+# 이전과 이후를 비교해서 이후 가격이 더 비싸다면 이전 가격으로 수정해준다.
+# 그러면 다음 것과도 비교했을 때, 싼 가격으로 값이 바뀌고 계산해준다.
 print(result)
