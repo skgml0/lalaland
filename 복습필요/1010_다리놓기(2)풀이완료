@@ -1,4 +1,4 @@
-from itertools import combinations
+from itertools import combinations # 메모리 초과됨 itertools 
 t=int(input())
 for _ in range(t):
     n,m = map(int,input().split())
@@ -10,7 +10,7 @@ for _ in range(t):
         result=m
         print(result)
     else:
-        for i in range(m,m-n+1,-1):
+        for i in range(m,m-n,-1):
             #print(" n:{} m:{} i:{} bunza:{}".format(n,m,i,bunza) )
             bunza *=i
             #print(i, bunza )
