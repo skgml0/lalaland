@@ -1,3 +1,4 @@
+# 10972 
 n= int(input())
 input_array = list(map(int, input().split()))
 # 마지막값 빈공백, 그래서 제외
